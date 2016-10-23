@@ -1,0 +1,56 @@
+{{! /organization/view/:id }}
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <img class='org-profile-pic' src="{{organizationRender.org_logo_url}}">
+        <h1 class="username">{{organizationRender.organization_name}}</h1><hr>
+      </div>
+      <div class="row">
+        <div class="col-md-8" id="users">
+          <u>About</u></b><br>{{organizationRender.about}}<br><br>
+          <u>Location</u></b><br>{{organizationRender.street}},  {{organizationRender.city}}, {{organizationRender.state}}  {{organizationRender.zip}}<br><br>
+          <u>Email</u></b><br>{{organizationRender.email}}<br><br>
+          <u>Phone Number</u>v {{organizationRender.phone_number}}<br><br>
+          <u>Contact</u></b><br>{{organizationRender.contact}}<br><br>
+          <u>Website</u></b><br> {{organizationRender.website}}<br><br>
+        </div>
+        <div class="col-md-4">
+          <div id="map" style="height: 300px;width:auto;"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- BUILD OUT THESE ROUTES -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row" id="form">
+        <h1>All Organized Events</h1>
+      </div>
+      <div class="row">
+          {{#each events}}
+            <div class="event-list">
+              <a href='/event/view/{{id}}'>
+                <h2 class="event-list-names">{{title}}</h2>
+              </a>
+              <h3 class="event-list-city">{{city}}, {{state}}</h3>
+            </div>
+          {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var organization = {{{organization}}}
+  organizationMap(organization)
+</script>

@@ -1,0 +1,33 @@
+{{! /volunteer/view/:id }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <img class='vol-profile-pic' src="{{volunteerRender.picture_url}}">
+        <h1 class="name">{{volunteerRender.first_name}} {{volunteerRender.last_name}}</h1><hr>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="users">
+          <b><u>Username</u></b><br>{{volunteerRender.user_name}}<br><br>
+          <u>About</u> <br>{{volunteerRender.about}}<br><br>
+          <u>Location</u><br> {{volunteerRender.city}}, {{volunteerRender.state}}<br><br>
+          <u>Email</u><br>{{volunteerRender.email}}<br><br>
+          <u>Phone Number</u><br> {{volunteerRender.phone_number}}<br><br>
+          <div class="cause-tags">
+            {{#each volCauseRender}}
+              <span>{{name}} |</span>
+            {{/each}}
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="map" style="height: 300px;width:auto;"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var volunteer = {{{volunteer}}}
+  volunteerMap(volunteer)
+</script>

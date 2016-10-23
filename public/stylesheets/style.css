@@ -1,0 +1,348 @@
+body  {
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.about  {
+  font-size:17px;
+  padding:20px 10px 3px 10px;
+  margin-top: 0px;
+}
+
+
+a {
+  color: #003c9e;
+}
+.open .dropdown-menu{
+    display:block;
+}
+#title {
+    text-align: center;
+    padding-bottom: 4em;
+    padding-top: 5em;
+}
+#home-button-left {
+    text-align: center;
+    padding-top: 4em;
+}
+#home-button-right {
+    text-align: center;
+    padding-top: 4em;
+}
+.log-in-title {
+    text-align: center;
+}
+.city-input input[type="text"],
+.city-input input[type="submit"]{
+    float: right;
+    margin-top: 2em;
+}
+.username {
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#users {
+    font-size: 16px;
+}
+#actions {
+    margin-top: 15px;
+}
+.logo {
+  display: inline-block;
+  margin-left: 20px;
+  height: 60px;
+}
+.title-post {
+    text-align: center;
+}
+.link {
+    text-decoration: none;
+}
+.link-list {
+    list-style: none;
+}
+
+/***************
+organization list
+***************/
+.organization-list {
+    background-color: #e9e8e8;
+    padding: 20px;
+    margin: 5px;
+}
+.org-list-names, .org-list-city {
+    margin:0;
+    padding:0;
+}
+
+.org-list-names {
+  font-size: 20px;
+}
+
+.org-list-city {
+  font-size: 16px;
+}
+
+.org-list-names:hover {
+  color: #0457dd;
+}
+
+/*****************
+Event List
+*****************/
+
+.event-list {
+    background-color: #e9e8e8;
+    padding: 20px;
+    margin: 5px;
+}
+.event-lists {
+    background-color: #e9e8e8;
+    padding: 20px;
+    margin: 5px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+.event-list-names, .event-list-city {
+    margin:0;
+    padding:0;
+}
+
+.event-list-names {
+  font-size: 20px;
+  padding-bottom:5px;
+}
+
+.event-list-city {
+  font-size: 16px;
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+/*************COULD ADD DESCRIPTION SNIPPET TO EVENT LISTS***********/
+
+
+/*.event-list-description {
+  width:75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}*/
+
+.event-list-names:hover {
+  color: #0457dd;
+}
+
+
+/**********
+NAVBAR
+**********/
+/* Remove margins and padding from the list, and add a black background color */
+
+nav.navbar.navbar-default {
+    background-color: #333333;
+}
+/* Float the list items side by side */
+nav.navbar.navbar-default li {
+    float: right;
+}
+/* Style the links inside the list items */
+nav.navbar.navbar-default li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+    background-color: #333333;
+}
+.dropdown-menu {
+    background-color: #333333;
+}
+#dropButton li a {
+    background-color: #333333;
+    color: #ffffff;
+}
+#dropButton li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+#dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+  background-color: white;
+  color: black;
+}
+.events {
+    text-align: center;
+    margin-top: 40px;
+}
+.dashboard {
+    text-align: center;
+    margin: -15px 0 30px 0;
+}
+#dropdownMenu1 {
+    width: 250px;
+}
+/* Change background color of links on hover */
+nav.navbar.navbar-default li a:hover {
+    background-color: #555;
+}
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+nav.navbar.navbar-default li.icon {
+    display: none;
+}
+/**********
+FORMS
+**********/
+.form-style-7{
+    margin:50px auto;
+    background:#fff;
+    border-radius:2px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.form-style-7 ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.form-style-7 li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    /*overflow: hidden;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.form-style-7 textarea{
+    resize:none;
+    width: 100%;
+    height: 200px;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+    background: #6B9FFF;
+    color:#fff;
+}
+
+
+/**********Register**********/
+#event-unregister {
+  display:none;
+  background-color: #FF5252;
+}
+
+
+.vol-profile-pic  {
+  margin: auto;
+  border-radius: 65%;
+  height:130px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 4px 4px 9px grey;
+}
+.org-profile-pic  {
+  margin: auto;
+  max-height:120px;
+  width:auto;
+  overflow: hidden;
+  display: block;
+  box-shadow: 4px 4px 9px grey;
+}
+u {
+  font-size:18px;
+}
+#map  {
+  border:1px 0px 1px 0px grey;
+  box-shadow: 2px 2px 6px grey;
+}
+.vol-cause  {
+  display: inline-block;
+  border: 1px 0px 1px 0px solid black;
+  padding:5px;
+  background-color: #E9E8E8;
+  border-radius: 1px;
+  margin-right: 2px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size:14px;
+  box-shadow: 1px 1px 2px grey;
+}
+#causeU {
+  display: block;
+}

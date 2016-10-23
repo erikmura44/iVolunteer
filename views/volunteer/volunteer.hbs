@@ -1,0 +1,23 @@
+{{! /volunteer }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>Volunteers</h1>
+      <div class="row">
+        {{#each data}}
+          <div class="organization-list">
+            <a href='/volunteer/view/{{id}}'>
+              <img class='org-list-pic' src="{{picture_url}}">
+              <h2 class="org-list-names">{{first_name}} {{last_name}}</h2>
+            </a>
+            <h3 class="org-list-city">{{city}}, {{state}}</h3>
+            {{#each causes}}
+              <span>{{this.name}}</span>
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

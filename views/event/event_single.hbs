@@ -1,0 +1,44 @@
+{{! /event/view/:id }}
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <h1 class="username">{{eventsRender.title}}</h1><hr>
+      </div>
+      <div class="row">
+        <div class="col-md-8" id="users">
+          <u>About</u></b><br> {{eventsRender.description}}<br><br>
+          <u>Location</u></b><br> {{eventsRender.location}}<br><br>
+          <u>Address</u></b><br> {{eventsRender.street}},  {{eventsRender.city}}, {{eventsRender.zip}}<br><br>
+          <u>Start Date/Time</u></b><br> {{eventsRender.start_date}} / {{eventsRender.start_time}}<br><br>
+          <u>End Date/Time</u></b><br> {{eventsRender.end_date}} / {{eventsRender.end_time}}<br><br>
+          {{#each eventsCauseRender}}
+            <span>{{name}} |</span>
+          {{/each}}
+          <br><br>
+      <a href="/event/register/{{eventsRender.id}}">
+        <input type="submit" action="event/register/:id"class="btn btn-primary" id="event-register" value="Register for Event">
+      </a>
+
+
+      <a href="/event/unregister/{{eventsRender.id}}">
+        <input type="submit" action="event/unregister/:id"class="btn btn-primary" id="event-unregister" value="Unregister">
+      </a>
+
+
+        </div>
+        <div class="col-md-4">
+          <div id="map" style="height: 300px;width:auto;"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var events = {{{events}}}
+  eventMap(events)
+</script>
