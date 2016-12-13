@@ -1,12 +1,32 @@
-# iVolunteer
-### by Team MEJC
+## iVolunteer
 
-[Working Site](http://ivolunteerg31.herokuapp.com/)
+#### iVolunteer's main focus is to connect individuals seeking volunteer opportunities with organizations seeking volunteers. At iVolunteer, you are able to post opportunities to a wide audience who are searching for volunteer work. For volunteers, what better way to search for exciting volunteer experiences having them all at the push of a button.  Welcome to iVolunteer.
 
-[GitHub](https://github.com/erikmura44/mejc)
+###Working site: [iVolunteer] (http://ivolunteerg31.herokuapp.com/)
+
+### Features
+* Find Volunteer opportunities
+* Create volunteer opportunities
+* Edit and Delete opportunities or events signed up for
 
 
-### iVolunteer's main focus is to connect individuals seeking volunteer opportunities with organizations seeking volunteers. At iVolunteer, you are able to post opportunities to a wide audience who are searching for volunteer work. For volunteers, what better way to search for exciting volunteer experiences having them all at the push of a button.  Welcome to iVolunteer.  
+#### Technologies Used
+* Handlebars
+* Node.js
+* Express.js
+* PostgreSQL
+* Bootstrap
+* Knex
+* Passport
+* Passport-Local
+* bcrypt
+* jQuery
+* express-session
+* faker
+* Git
 
-## Technology Used
-#### Express, Node, Handlebars, Bootstrap, Knex, Passport, Passport-Local, bcrypt, HTML, CSS, jQuery, Agile, express-session, dotenv, faker, postgress, psql
+![alt tag](http://i.imgur.com/nxHPTH0.png)
+
+![alt tag](http://i.imgur.com/kuzLW8Q.png)
+
+![alt tag](http://i.imgur.com/YLFC7j2.png)
